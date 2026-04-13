@@ -1,12 +1,32 @@
 let username = 'karthik';
 console.log(username);
-let param: string | boolean = 'karthik';
-param = false;
 
-let stringarr = ['karthik', 'sai', 'harish'];
-let numarr = [1, 2, 3, 4, 5];
-let boolarr = [true, false, true];
+let myobj: object;
+myobj ={
+    name: 'karthik',
+    age: 25,
+    email: 'karthik@example.com',   
+    phone: '123-456-7890',
+    address: '123 Main St, Anytown, USA'
+}
 
-let strnumarr = ['karthik', 1, 'sai', 2, 'harish', 3];
+type employee ={
+    name: string;
+    id: number;
+    department: string;
+    salary: number;
+    skills: string[];
+}
 
-let strnumboolarr = ['karthik', 1, true, 'sai', 2, false, 'harish', 3, true]; 
+let emp1: employee = {
+    name: 'karthik',
+    id: 101,
+    department: 'IT',
+    salary: 50000,
+    skills:['java','python','springboot']
+}
+
+const greetemp = (emp:employee) =>{
+    return `Hello ${emp.name}`;
+}
+console.log(greetemp(emp1));
