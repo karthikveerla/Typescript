@@ -60,3 +60,25 @@ const printmsg = (msg:any):void =>{
 
 printmsg('arrow functions!');
 printmsg(add(3,6));
+
+//optionalparamenter
+const addAll = (a:number,b:number,c?:number) : number =>{
+    if(c != undefined){
+        return a+b+c;
+    }
+    return a+b;
+}
+
+//default parameter
+const addWithDefault = (a:number,b:number,c:number=10): number =>{
+    return a+b+c;
+}
+
+const addwithfirstdefault = (a:number =10,b:number):number=>{
+    return a+b;
+}
+
+console.log(addAll(3,4));
+console.log(addAll(3,4,5));
+console.log(addWithDefault(3,4));
+console.log(addwithfirstdefault(undefined,5));

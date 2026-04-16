@@ -49,3 +49,21 @@ const printmsg = (msg) => {
 };
 printmsg('arrow functions!');
 printmsg(add(3, 6));
+//optionalparamenter
+const addAll = (a, b, c) => {
+    if (c != undefined) {
+        return a + b + c;
+    }
+    return a + b;
+};
+//default parameter
+const addWithDefault = (a, b, c = 10) => {
+    return a + b + c;
+};
+const addwithfirstdefault = (a = 10, b) => {
+    return a + b;
+};
+console.log(addAll(3, 4));
+console.log(addAll(3, 4, 5));
+console.log(addWithDefault(3, 4));
+console.log(addwithfirstdefault(undefined, 5));
