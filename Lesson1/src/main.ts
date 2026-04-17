@@ -15,10 +15,10 @@ const addOrConcat = (a:number,b:number, c: 'add' | 'concat') : number | string =
     }
     return ''+a+b;
 }
-
+//assertion to string 
 let myval: string = addOrConcat(2,3,'concat') as string;
 console.log(myval);
-
+//assertion to number
 let myval2: number = addOrConcat(2,3,'add') as number;
 console.log(myval2);
 

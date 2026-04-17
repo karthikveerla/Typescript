@@ -9,8 +9,10 @@ const addOrConcat = (a, b, c) => {
     }
     return '' + a + b;
 };
+//assertion to string 
 let myval = addOrConcat(2, 3, 'concat');
 console.log(myval);
+//assertion to number
 let myval2 = addOrConcat(2, 3, 'add');
 console.log(myval2);
 // // let username = 'karthik';
